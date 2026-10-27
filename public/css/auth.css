@@ -1,0 +1,54 @@
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: Arial, sans-serif;
+}
+
+.register-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.register-form h2 {
+    color: #333;
+    font-weight: bold;
+}
+
+.register-form .form-label {
+    font-weight: 600;
+    color: #444;
+}
+
+.register-form .form-control {
+    padding: 11px;
+    border-radius: 8px;
+}
+
+.register-form .form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.4);
+}
+
+.register-form .btn-primary {
+    background: #667eea;
+    border-color: #667eea;
+    padding: 11px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.register-form .btn-primary:hover {
+    background: #5265c9;
+    border-color: #5265c9;
+}
+
+.register-form a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+.register-form a:hover {
+    text-decoration: underline;
+}
+

@@ -1,0 +1,148 @@
+/* Main Dashboard Container */
+.dashboard-cards {
+    padding: 24px 0;
+}
+
+/* Dynamic Grid Layout */
+.dashboard-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+/* Dashboard Card */
+.student-stat-card {
+    background: linear-gradient(
+        135deg,
+        #172b4d 0%,
+        #1e40af 55%,
+        #2563eb 100%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(23, 43, 77, 0.18);
+    overflow: hidden;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card Body */
+.student-stat-card .card-body {
+    padding: 26px 24px;
+    background: transparent;
+    flex: 1;
+}
+
+/* Card Top Section */
+.student-stat-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+/* Card Label */
+.student-stat-label {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 600;
+    margin: 0 0 12px;
+    letter-spacing: 0.2px;
+}
+
+/* Card Number */
+.student-stat-number {
+    color: #ffffff;
+    font-size: 38px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+/* Card Description */
+.student-stat-description {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 13px;
+    margin: 10px 0 0;
+    line-height: 1.6;
+}
+
+/* Card Icon */
+.student-stat-icon {
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 27px;
+}
+
+/* Card Footer */
+.student-stat-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 24px;
+    background: rgba(0, 0, 0, 0.13);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Footer Icon */
+.student-stat-footer i {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* Tablet: 2 Cards Per Row */
+@media (max-width: 991.98px) {
+    .dashboard-cards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+}
+
+/* Mobile: 1 Card Per Row */
+@media (max-width: 575.98px) {
+    .dashboard-cards {
+        padding: 16px 0;
+    }
+
+    .dashboard-cards-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .student-stat-card .card-body {
+        padding: 22px 20px;
+    }
+
+    .student-stat-label {
+        font-size: 19px;
+    }
+
+    .student-stat-number {
+        font-size: 32px;
+    }
+
+    .student-stat-icon {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+        font-size: 23px;
+    }
+
+    .student-stat-footer {
+        padding: 12px 20px;
+    }
+}
